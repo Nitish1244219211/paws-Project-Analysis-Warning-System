@@ -125,7 +125,7 @@ def size_decile_in_sector(sector, original_cost):
     rank = (values < original_cost).sum() + 1
     decile = int((rank - 1) / len(values) * 10) + 1
 
-    return float(min(10, max(1, decile)))
+    return float(min(9, max(0, decile)))
 
 
 # Get historical overrun rate for a group.
@@ -163,9 +163,9 @@ def engineer_features(payload):
 
     progress_gap = max(0.0, expected_progress - physical_progress)
 
-    cost_utilization = expenditure / revised_cost if revised_cost else 0.0
+    cost_utilization = expenditure / original_cost if original_cost else 0.0
 
-    cost_per_progress = expenditure / physical_progress if physical_progress > 0 else expenditure
+    cost_per_progress = expenditure / (physical_progress + 1) if physical_progress > 0 else expenditure
     
 
     return {
