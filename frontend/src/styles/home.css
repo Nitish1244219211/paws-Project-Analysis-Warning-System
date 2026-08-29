@@ -1,0 +1,65 @@
+.paws-pipeline-card {
+  background: #fff;
+  border: 1px solid var(--paws-line);
+  border-radius: 8px;
+  padding: 1.4rem;
+  box-shadow: var(--paws-shadow-card);
+}
+.paws-pipeline-step {
+  font-family: var(--paws-font-mono);
+  font-size: 0.7rem;
+  color: var(--paws-saffron-600);
+  letter-spacing: 0.08em;
+}
+.paws-pipeline-card h3 {
+  font-size: 1.08rem;
+  margin: 0.55rem 0 0.45rem;
+}
+.paws-pipeline-card p {
+  font-size: 0.86rem;
+  color: var(--paws-ink-700);
+  line-height: 1.6;
+  margin: 0;
+}
+.paws-about-section {
+  background: var(--paws-navy-950);
+  color: #fff;
+}
+.paws-about-section h2 {
+  color: #fff;
+}
+.paws-about-copy {
+  color: #cbd5e5;
+  line-height: 1.7;
+  max-width: 60ch;
+  margin-bottom: 1.6rem;
+}
+.paws-about-facts {
+  border-left: 3px solid var(--paws-saffron-500);
+  padding-left: 1.4rem;
+  display: grid;
+  gap: 1.15rem;
+}
+.paws-about-facts div {
+  display: grid;
+  gap: 0.15rem;
+}
+.paws-about-facts strong {
+  font-family: var(--paws-font-display);
+  font-size: 1.15rem;
+  color: #fff;
+}
+.paws-about-facts span {
+  font-size: 0.82rem;
+  color: #cbd5e5;
+}
+.paws-page-intro {
+  max-width: 65ch;
+  color: var(--paws-ink-700);
+  line-height: 1.65;
+  margin: -0.8rem 0 2rem;
+}
+.paws-empty-state {
+  text-align: center;
+  max-width: 640px;
+}

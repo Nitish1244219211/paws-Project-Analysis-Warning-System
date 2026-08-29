@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+:root {
+  --paws-navy-950: #0a1930;
+  --paws-navy-900: #0f2545;
+  --paws-navy-800: #16335e;
+  --paws-navy-700: #1f4478;
+  --paws-navy-100: #e8edf5;
+  --paws-saffron-600: #d9660b;
+  --paws-saffron-500: #f2861c;
+  --paws-saffron-100: #fdf0e2;
+  --paws-green-700: #14603f;
+  --paws-green-500: #1c8a5a;
+  --paws-green-100: #e2f3ea;
+  --paws-red-600: #b3261e;
+  --paws-red-100: #fbeae9;
+  --paws-amber-600: #9a681a;
+  --paws-amber-100: #fbf1de;
+  --paws-paper: #f7f7f4;
+  --paws-white: #fff;
+  --paws-ink-900: #14181f;
+  --paws-ink-700: #3a4150;
+  --paws-ink-500: #667085;
+  --paws-line: #dfe2e8;
+  --paws-font-display: "Playfair Display", Georgia, serif;
+  --paws-font-body: "Playfair Display", Georgia, serif;
+  --paws-font-mono: "IBM Plex Mono", "Courier New", monospace;
+  --paws-radius-sm: 4px;
+  --paws-radius-md: 8px;
+  --paws-shadow-card:
+    0 1px 2px rgba(15, 37, 69, 0.06), 0 4px 16px rgba(15, 37, 69, 0.04);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: auto;
+}
+body {
+  margin: 0;
+  font-family: var(--paws-font-body);
+  color: var(--paws-ink-900);
+  background: var(--paws-paper);
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+.paws-display {
+  font-family: var(--paws-font-display);
+  font-weight: 600;
+  color: var(--paws-navy-950);
+}
+a {
+  color: var(--paws-navy-700);
+}
+.paws-eyebrow {
+  font-family: var(--paws-font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--paws-saffron-600);
+}
+.paws-section {
+  padding: 5rem 0;
+}
+.paws-section-title {
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  line-height: 1.15;
+  max-width: 32ch;
+  margin: 0.45rem 0 2rem;
+}
+.paws-card {
+  background: var(--paws-white);
+  border: 1px solid var(--paws-line);
+  border-radius: var(--paws-radius-md);
+  box-shadow: var(--paws-shadow-card);
+}
+.paws-btn-primary {
+  background: var(--paws-navy-900);
+  border: 1px solid var(--paws-navy-900);
+  color: #fff;
+  border-radius: var(--paws-radius-sm);
+  padding: 0.72rem 1.4rem;
+  font-weight: 600;
+}
+.paws-btn-primary:hover,
+.paws-btn-primary:focus {
+  background: var(--paws-navy-800);
+  border-color: var(--paws-navy-800);
+  color: #fff;
+}
+.paws-btn-secondary {
+  background: #fff;
+  border: 1px solid var(--paws-navy-900);
+  color: var(--paws-navy-900);
+  border-radius: var(--paws-radius-sm);
+  padding: 0.72rem 1.4rem;
+  font-weight: 600;
+}
+.paws-btn-secondary:hover,
+.paws-btn-secondary:focus {
+  background: var(--paws-navy-100);
+  color: var(--paws-navy-900);
+}
+.paws-tricolour-rule {
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    var(--paws-saffron-500) 0 33.33%,
+    #fff 33.33% 66.66%,
+    var(--paws-green-500) 66.66% 100%
+  );
+}
+.form-label {
+  font-weight: 600;
+  color: var(--paws-ink-700);
+}
+.form-control,
+.form-select,
+.input-group-text {
+  border-color: #cfd5de;
+  border-radius: 4px;
+  min-height: 46px;
+  font-family: var(--paws-font-body);
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--paws-navy-700);
+  box-shadow: 0 0 0 0.2rem rgba(31, 68, 120, 0.12);
+}
+.input-group > .form-control {
+  border-radius: 0 4px 4px 0;
+}
+.input-group-text {
+  background: var(--paws-navy-100);
+  color: var(--paws-navy-900);
+  font-weight: 600;
+}
+.form-text {
+  color: var(--paws-ink-500);
+}
+button,
+a,
+input,
+select {
+  outline-offset: 3px;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--paws-saffron-600);
+}
+.risk-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--paws-font-mono);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.62rem;
+  border-radius: 999px;
+}
+.risk-badge.LOW {
+  background: var(--paws-green-100);
+  color: var(--paws-green-700);
+}
+.risk-badge.MEDIUM {
+  background: var(--paws-amber-100);
+  color: var(--paws-amber-600);
+}
+.risk-badge.HIGH {
+  background: var(--paws-red-100);
+  color: var(--paws-red-600);
+}
+@media (max-width: 767px) {
+  .paws-section {
+    padding: 3.5rem 0;
+  }
+  .paws-section-title {
+    margin-bottom: 1.5rem;
+  }
+}

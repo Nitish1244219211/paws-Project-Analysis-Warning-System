@@ -1,0 +1,108 @@
+.paws-hero {
+  background: var(--paws-paper);
+  padding: 5rem 0 4rem;
+  border-bottom: 1px solid var(--paws-line);
+}
+.paws-hero-grid {
+  display: grid;
+  grid-template-columns: 1.04fr 0.96fr;
+  gap: 4rem;
+  align-items: center;
+}
+.paws-hero-headline {
+  font-size: clamp(2.65rem, 5vw, 4.5rem);
+  line-height: 1.02;
+  margin: 0.55rem 0 1.15rem;
+  max-width: 11ch;
+}
+.paws-hero-accent {
+  color: var(--paws-saffron-600);
+}
+.paws-hero-sub {
+  font-size: 1.03rem;
+  color: var(--paws-ink-700);
+  max-width: 54ch;
+  line-height: 1.65;
+}
+.paws-hero-actions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin: 1.7rem 0 2.5rem;
+}
+.paws-hero-stats {
+  display: flex;
+  gap: 2.4rem;
+  border-top: 1px solid var(--paws-line);
+  padding-top: 1.35rem;
+  flex-wrap: wrap;
+}
+.paws-stat-value {
+  font-family: var(--paws-font-mono);
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--paws-navy-950);
+}
+.paws-stat-suffix {
+  color: var(--paws-saffron-600);
+}
+.paws-stat-label {
+  font-size: 0.78rem;
+  color: var(--paws-ink-500);
+  margin-top: 0.2rem;
+}
+.paws-hero-visual {
+  background: #fff;
+  border: 1px solid var(--paws-line);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: var(--paws-shadow-card);
+}
+.paws-visual-kicker {
+  font-family: var(--paws-font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--paws-ink-500);
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--paws-line);
+}
+.paws-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: var(--paws-green-500);
+  border-radius: 50%;
+  margin-right: 0.45rem;
+}
+.paws-hero-graphic {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1rem 0 0.6rem;
+}
+.paws-hero-visual-caption {
+  display: flex;
+  gap: 0.55rem;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--paws-ink-700);
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--paws-line);
+}
+.paws-hero-visual-footnote {
+  font-size: 0.7rem;
+  color: var(--paws-ink-500);
+  margin: 0.55rem 0 0;
+}
+@media (max-width: 991px) {
+  .paws-hero {
+    padding: 3.5rem 0;
+  }
+  .paws-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .paws-hero-headline {
+    max-width: none;
+  }
+}
