@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home";
 import ProjectAnalysis from "./pages/ProjectAnalysis";
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/results" element={<Results />} />
         </Routes>
       </main>
+      <Analytics />
     </div>
   );
 }
